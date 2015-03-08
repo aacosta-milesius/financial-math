@@ -1,5 +1,5 @@
 """
-Actuarial defs from Kellison text
+Actuarial defs from Kellison, Stephen G. The theory of interest. Vol. 2. Burr Ridge, IL: Irwin, 1991.
 """
 
 import math
@@ -10,7 +10,7 @@ def BalanceRemaining(n, t, i):
 
 def BalanceRemainingR(n, t, i):
     # Kellison (6.2) - Retrospective
-    return AnnuityImmediateA(n, i) * (1 + i)**t - AnnuityImmediateS(t, i)
+    return AnnuityImmediateA(n, i) * (1 + i) ** t - AnnuityImmediateS(t, i)
 
 def InterestPaid(n, t, i):
     # Kellison (6.3)
