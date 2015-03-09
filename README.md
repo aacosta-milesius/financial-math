@@ -1,5 +1,7 @@
 # financial-math
-# This contains actuarial functions and many more financial function goodies.
+
+## actuary.py
+## This contains actuarial functions and many more financial function goodies.
 Originally written in Mathematica, then translated to VBA, it made its way into Python.
 
 1. Annuities
@@ -14,4 +16,5 @@ Originally written in Mathematica, then translated to VBA, it made its way into 
   * Makeham
 3. Depreciation
   * Straight-line
+  * Declining balance
   * Sum of the Years Digits
