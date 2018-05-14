@@ -1,5 +1,6 @@
 """
-Actuarial defs from Kellison, Stephen G. The theory of interest. Vol. 2. Burr Ridge, IL: Irwin, 1991.
+Actuarial defs from Kellison, Stephen G.
+The theory of interest. 2ed, Burr Ridge, IL: Irwin, 1991.
 """
 
 import math
@@ -40,11 +41,11 @@ def AnnuityDueS(n, i, m = 1):
     # Kellison
     return ((1 + i) * (-1 + (1 + (i / m)) ** (n * m))) / i
 
-def ContinuousAnnuityA(n, delta, m = 1):
+def ContinuousAnnuityA(n, delta, i, m = 1):
     # Kellison
     return (1 - (1 / (1 + (i / m))) ** (n * m)) / delta
 
-def ContinuousAnnuityS(n, delta, m = 1):
+def ContinuousAnnuityS(n, delta, i, m = 1):
     # Kellison
     return (-1 + (1 + (i / m)) ** (n * m)) / delta
 
@@ -98,6 +99,9 @@ def BondPriceMakeham(C, F, r, i, n, m = 2):
     # Kellison 7.4
     K = C * (1 + i / m) ** (-m * n)
     g = (F / C) * (r / m)
+    print K
+    print g
+    print r
     return K + (g / i * m) * (C - K)
 
 def DepreciationSF(A, S, n, t, j):
