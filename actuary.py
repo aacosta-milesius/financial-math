@@ -122,7 +122,6 @@ def DepreciationSOYD(A, S, n, t):
     Sn = (n * (n + 1)) / 2  # Kellison 8.15
     return ((n - t + 1) / Sn) * (A - S)
 
-def ForwardRate(r1, r2, t1, t2):
-    f12=(pow((1+t2),t2)/pow((1+t1),t1))
-    f12=pow(f12, (1/(t2-t1))) - 1
-    return f12
+def ForwardRate(s1, s2, t1, t2):
+    f_1_2 = ((1 + s2)**t2 / (1 + s1)**t1)**(1 / (t2 - t1)) - 1
+    return f_1_2
