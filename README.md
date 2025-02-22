@@ -18,6 +18,8 @@ Originally written in Mathematica, then translated to VBA, it made its way into 
   * Straight-line
   * Declining balance
   * Sum of the Years Digits
+4. Interest Rates
+  * Forward Rate
 
 ## demo-actuary.py
 ## This is Python code that demonstrates a 36-month amortization loan of $120,000.
